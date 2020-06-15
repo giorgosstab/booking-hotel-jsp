@@ -514,3 +514,6 @@
 0:0:0:0:0:0:0:1 - - [07/Jun/2020:17:08:40 +0300] "GET /hilton/public/css/font-awesome.min.css HTTP/1.1" 404 1005 http-bio-8080-exec-8 47
 0:0:0:0:0:0:0:1 - - [07/Jun/2020:17:11:02 +0300] "GET /hilton/ HTTP/1.1" 200 42975 http-bio-8080-exec-1 299
 0:0:0:0:0:0:0:1 - - [07/Jun/2020:17:11:03 +0300] "GET /hilton/public/css/font-awesome.min.css HTTP/1.1" 404 1005 http-bio-8080-exec-2 923
+0:0:0:0:0:0:0:1 - - [07/Jun/2020:18:45:01 +0300] "GET /hilton/ HTTP/1.1" 200 42975 http-bio-8080-exec-1 794
+0:0:0:0:0:0:0:1 - - [07/Jun/2020:18:45:02 +0300] "GET /hilton/public/css/font-awesome.min.css HTTP/1.1" 404 1005 http-bio-8080-exec-2 1386
+0:0:0:0:0:0:0:1 - - [07/Jun/2020:23:41:08 +0300] "GET /hilton/te HTTP/1.1" 200 703 http-bio-8080-exec-4 1199

@@ -4,6 +4,7 @@ public class Room {
     protected int id;
     protected String name;
     protected float price;
+    protected String image;
     protected String created_at;
     protected String updated_at;
 
@@ -15,15 +16,16 @@ public class Room {
         this.id = id;
     }
 
-    public Room(String name, float price, String created_at, String updated_at) {
+    public Room(String name, float price, String image, String created_at, String updated_at) {
         this.name = name;
         this.price = price;
+        this.image = image;
         this.created_at = created_at;
         this.updated_at = updated_at;
     }
 
-    public Room(int id, String name, float price, String created_at, String updated_at) {
-        this(name, price, created_at, updated_at);
+    public Room(int id, String name, float price, String image, String created_at, String updated_at) {
+        this(name, price, image, created_at, updated_at);
         this.id = id;
     }
 
@@ -67,5 +69,11 @@ public class Room {
         this.updated_at = updated_at;
     }
 
+    public String getImage() {
+        return image;
+    }
 
+    public void setImage(String image) {
+        this.image = image;
+    }
 }

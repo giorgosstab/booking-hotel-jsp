@@ -48,7 +48,7 @@ public class RoomDAO {
     public List<Room> listAllRooms() throws SQLException {
         List<Room> listRoom = new ArrayList<>();
 
-        String sql = "SELECT * FROM rooms";
+        String sql = "SELECT * FROM room";
 
         connect();
 
@@ -59,10 +59,11 @@ public class RoomDAO {
             int id = rs.getInt("room_id");
             String name = rs.getString("name");
             float price = rs.getFloat("price");
+            String image = rs.getString("image");
             String created_at = rs.getString("created_at");
             String updated_at = rs.getString("updated_at");
 
-            Room room = new Room(id, name, price, created_at, updated_at);
+            Room room = new Room(id, name, price, image, created_at, updated_at);
             listRoom.add(room);
         }
 
@@ -74,28 +75,61 @@ public class RoomDAO {
         return listRoom;
     }
 
-//	public Book getBook(int id) throws SQLException {
-//		Book book = null;
-//		String sql = "SELECT * FROM book WHERE book_id = ?";
-//
-//		connect();
-//
-//		PreparedStatement statement = jdbcConnection.prepareStatement(sql);
-//		statement.setInt(1, id);
-//
-//		ResultSet resultSet = statement.executeQuery();
-//
-//		if (resultSet.next()) {
-//			String title = resultSet.getString("title");
-//			String author = resultSet.getString("author");
-//			float price = resultSet.getFloat("price");
-//
-//			book = new Book(id, title, author, price);
-//		}
-//
-//		resultSet.close();
-//		statement.close();
-//
-//		return book;
-//	}
+	public Room getRoom(int room_id) throws SQLException {
+		Room room = null;
+		String sql = "SELECT * FROM room WHERE room_id = ?";
+
+		connect();
+
+		PreparedStatement st = jdbcConnection.prepareStatement(sql);
+        st.setInt(1, room_id);
+
+		ResultSet rs = st.executeQuery();
+
+		if (rs.next()) {
+            String name = rs.getString("name");
+            float price = rs.getFloat("price");
+            String image = rs.getString("image");
+            String created_at = rs.getString("created_at");
+            String updated_at = rs.getString("updated_at");
+
+			room = new Room(room_id, name, price, image, created_at, updated_at);
+		}
+
+        rs.close();
+        st.close();
+
+		return room;
+	}
+
+    public List<Room> getSimilarRooms(int room_id) throws SQLException {
+        List<Room> similarRooms = new ArrayList<>();
+
+        String sql = "SELECT * FROM room WHERE room_id != ? ORDER BY RAND() LIMIT 3";
+
+        connect();
+
+        PreparedStatement st = jdbcConnection.prepareStatement(sql);
+        st.setInt(1, room_id);
+        ResultSet rs = st.executeQuery();
+
+        while (rs.next()) {
+            int id = rs.getInt("room_id");
+            String name = rs.getString("name");
+            float price = rs.getFloat("price");
+            String image = rs.getString("image");
+            String created_at = rs.getString("created_at");
+            String updated_at = rs.getString("updated_at");
+
+            Room room = new Room(id, name, price, image, created_at, updated_at);
+            similarRooms.add(room);
+        }
+
+        rs.close();
+        st.close();
+
+        disconnect();
+
+        return similarRooms;
+    }
 }
