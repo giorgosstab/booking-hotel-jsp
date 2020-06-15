@@ -4,37 +4,37 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Star Hotel</title>
+    <title>Hilton</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="icon" href="public/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../../../hilton/public/images/favicon.png" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i%7CPlayfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
 
     <!-- Bootstrap Stylesheet -->
-    <link rel="stylesheet" href="public/css/bootstrap.min4.3.1.css">
+    <link rel="stylesheet" href="../../../hilton/public/css/bootstrap.min4.3.1.css">
 
     <!-- Font Awesome Stylesheet -->
-    <link rel="stylesheet" href="public/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="../../../hilton/public/css/font-awesome.min.css" >
 
     <!-- Custom Stylesheets -->
-    <link rel="stylesheet" href="public/css/style.css">
-    <link rel="stylesheet" id="cpswitch" href="public/css/yellow.css">
-    <link rel="stylesheet" href="public/css/responsive.css">
+    <link rel="stylesheet" href="../../../hilton/public/css/style.css">
+    <link rel="stylesheet" id="cpswitch" href="../../../hilton/public/css/yellow.css">
+    <link rel="stylesheet" href="../../../hilton/public/css/responsive.css">
 
     <!-- Owl Carousel Stylesheet -->
-    <link rel="stylesheet" href="public/css/owl.carousel.css">
-    <link rel="stylesheet" href="public/css/owl.theme.css">
+    <link rel="stylesheet" href="../../../hilton/public/css/owl.carousel.css">
+    <link rel="stylesheet" href="../../../hilton/public/css/owl.theme.css">
 
     <!-- Flex Slider Stylesheet -->
-    <link rel="stylesheet" href="public/css/flexslider.css">
+    <link rel="stylesheet" href="../../../hilton/public/css/flexslider.css">
 
     <!-- Date-Picker Stylesheet-->
-    <link rel="stylesheet" href="public/vendors/gijgo-combined-1.9.13/css/gijgo.min.css">
+    <link rel="stylesheet" href="../../../hilton/public/vendors/gijgo-combined-1.9.13/css/gijgo.min.css">
 
     <!-- Magnific Gallery -->
-    <link rel="stylesheet" href="public/css/magnific-popup.css">
+    <link rel="stylesheet" href="../../../hilton/public/css/magnific-popup.css">
 </head>
 
 
@@ -44,75 +44,9 @@
     <!--====== LOADER =====-->
     <div class="loader"></div>
 
+    <jsp:include page="../partials/menu/top-bar.jsp" />
 
-    <!--=========== TOP-BAR-3 ===========-->
-    <div id="top-bar-3">
-        <div class="container">
-            <div class="row">
-                <div class="d-md-block d-none col-md-4 col-lg-4 col-xl-4">
-                    <div class="top-bar-3-item">
-                        <ul class="list-unstyled info-list">
-                            <li><span><i class="fa fa-map-marker"></i></span>29 Land St, Lorem City, CA</li>
-                            <li><span><i class="fa fa-phone"></i></span>+00 123 4567</li>
-                        </ul>
-                    </div><!-- end top-bar-3-item -->
-                </div><!-- end columns -->
-
-                <div class="col-md-4 col-lg-4 col-xl-4 text-center">
-                    <div class="top-bar-3-item">
-                        <h2 class="logo-title big"><a href="#"><span>Star</span>Hotel</a></h2>
-                        <ul class="list-unstyled list-inline icon-list">
-                            <li class="list-inline-item"><a href="#"><span><i class="fa fa-facebook"></i></span></a>
-                            </li>
-                            <li class="list-inline-item"><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
-                            <li class="list-inline-item"><a href="#"><span><i class="fa fa-google"></i></span></a></li>
-                            <li class="list-inline-item"><a href="#"><span><i class="fa fa-pinterest-p"></i></span></a>
-                            </li>
-                            <li class="list-inline-item"><a href="#"><span><i class="fa fa-instagram"></i></span></a>
-                            </li>
-                        </ul>
-                    </div><!-- end top-bar-3-item -->
-                </div><!-- end columns -->
-
-                <div class="col-md-4 col-lg-4 col-xl-4">
-                    <div class="top-bar-3-item">
-                        <ul class="list-unstyled list-inline info-list circle-ic">
-                            <li class="list-inline-item"><a href="login-1.html"><span><i class="fa fa-lock"></i></span>
-                                <p>Login</p>
-                            </a></li>
-                            <li class="list-inline-item"><a href="registration-1.html"><span><i
-                                    class="fa fa-user-plus"></i></span>
-                                <p>Sign Up</p>
-                            </a></li>
-                        </ul>
-                    </div><!-- end top-bar-3-item -->
-                </div><!-- end columns -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end top-bar-3 -->
-
-
-    <!--=============== MYNAVBAR-3 ================-->
-    <nav class="navbar navbar-expand-xl navbar-custom sticky-top header-4 landing-page" id="main_navbar">
-        <div class="container">
-
-            <button type="button" class="navbar-toggler" data-toggle="collapse"
-                    data-target="#navbarSupportedContent">
-                <i class="fa fa-bars"></i>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="#landing-page-body">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about-3">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#rooms-2">Our Rooms</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#our-gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#pricing-2">Pricing</a></li>
-                </ul>
-            </div><!-- end navbar collapse -->
-        </div><!-- end container -->
-    </nav><!-- end navbar -->
-
+    <jsp:include page="../partials/menu/navbar.jsp" />
 
     <!--=============== FLEX SLIDER ===============-->
     <section class="flexslider-container height-auto">
@@ -120,7 +54,7 @@
         <div class="flexslider slider">
             <ul class="slides">
 
-                <li class="item-1 back-size" style="background:			linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(public/images/slider-3-1.jpg) 50% 15%;
+                <li class="item-1 back-size" style="background:			linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../../../hilton/public/images/slider-3-1.jpg) 50% 15%;
     	background-size:cover;
     	height:100%;">
                     <div class="meta meta-padding-200 meta-style-2 txt-white">
@@ -132,7 +66,7 @@
                     </div><!-- end meta -->
                 </li><!-- end item-1 -->
 
-                <li class="item-2 back-size" style="background:			linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(public/images/slider-3-2.jpg) 50% 15%;
+                <li class="item-2 back-size" style="background:			linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../../../hilton/public/images/slider-3-2.jpg) 50% 15%;
     	background-size:cover;
     	height:100%;">
                     <div class="meta meta-padding-200 meta-style-2 txt-white">
@@ -302,22 +236,21 @@
 
                     <div class="row">
                         <div class="owl-carousel owl-theme" id="owl-rooms-2">
-                            <% System.out.println( pageContext.findAttribute("listRoom") ); %>
                             <c:forEach var="room" items="${listRoom}">
                                 <div class="item">
                                     <div class="col-md-12">
                                         <div class="room-block-2">
                                             <div class="room-block-2-img">
-                                                <img src="public/images/room-2-1.jpg" alt="dest-img" class="img-fluid" />
+                                                <img src="storage/<c:out value="${room.image}" />" alt="dest-img" class="img-fluid" />
 
                                                 <div class="room-block-2-btn">
-                                                    <a href="#" class="btn"><span><i class="fa fa-angle-right"></i></span></a>
+                                                    <a href="room?id=<c:out value='${room.id}' />" class="btn"><span><i class="fa fa-angle-right"></i></span></a>
                                                 </div><!-- end room-block-2-btn-->
 
                                                 <div class="room-block-2-title">
-                                                    <h3><a href="#"><c:out value="${room.name}" /></a></h3>
+                                                    <h3><a href="room?id=<c:out value='${room.id}' />"><c:out value="${room.name}" /></a></h3>
                                                     <ul class="list-unstyled">
-                                                        <li><h4><span><c:out value="${room.price}" /> &euro;</span> / Night</h4></li>
+                                                        <li><h4><span><c:out value="${room.price}" /> &euro;</span> / ανά Νύχτα</h4></li>
                                                     </ul>
                                                 </div><!-- end room-block-2-title -->
                                             </div><!-- end room-block-2-img -->
@@ -325,121 +258,11 @@
                                     </div><!-- end columns -->
                                 </div><!-- end item -->
                             </c:forEach>
-                            <div class="item">
-                                <div class="col-md-12">
-                                    <div class="room-block-2">
-                                        <div class="room-block-2-img">
-                                            <img src="public/images/room-2-1.jpg" alt="dest-img" class="img-fluid" />
-
-                                            <div class="room-block-2-btn">
-                                                <a href="#" class="btn"><span><i class="fa fa-angle-right"></i></span></a>
-                                            </div><!-- end room-block-2-btn-->
-
-                                            <div class="room-block-2-title">
-                                                <h3><a href="#">Deluxe Room</a></h3>
-                                                <ul class="list-unstyled">
-                                                    <li><h4><span>$64</span> / Night</h4></li>
-                                                    <li class="rating">
-                                                        <span><i class="fa fa-star"></i></span>
-                                                        <span><i class="fa fa-star"></i></span>
-                                                        <span><i class="fa fa-star"></i></span>
-                                                        <span><i class="fa fa-star"></i></span>
-                                                        <span><i class="fa fa-star-o"></i></span>
-                                                    </li>
-                                                </ul>
-                                            </div><!-- end room-block-2-title -->
-                                        </div><!-- end room-block-2-img -->
-                                    </div><!-- end room-block-2 -->
-                                </div><!-- end columns -->
-                            </div><!-- end item -->
-
-<%--                            <div class="item">--%>
-<%--                                <div class="col-md-12">--%>
-<%--                                    <div class="room-block-2">--%>
-<%--                                        <div class="room-block-2-img">--%>
-<%--                                            <img src="public/images/room-2-2.jpg" alt="dest-img" class="img-fluid" />--%>
-
-<%--                                            <div class="room-block-2-btn">--%>
-<%--                                                <a href="#" class="btn"><span><i class="fa fa-angle-right"></i></span></a>--%>
-<%--                                            </div><!-- end room-block-2-btn-->--%>
-
-<%--                                            <div class="room-block-2-title">--%>
-<%--                                                <h3><a href="#">Deluxe Room</a></h3>--%>
-<%--                                                <ul class="list-unstyled">--%>
-<%--                                                    <li><h4><span>$64</span> / Night</h4></li>--%>
-<%--                                                    <li class="rating">--%>
-<%--                                                        <span><i class="fa fa-star"></i></span>--%>
-<%--                                                        <span><i class="fa fa-star"></i></span>--%>
-<%--                                                        <span><i class="fa fa-star"></i></span>--%>
-<%--                                                        <span><i class="fa fa-star"></i></span>--%>
-<%--                                                        <span><i class="fa fa-star-o"></i></span>--%>
-<%--                                                    </li>--%>
-<%--                                                </ul>--%>
-<%--                                            </div><!-- end room-block-2-title -->--%>
-<%--                                        </div><!-- end room-block-2-img -->--%>
-<%--                                    </div><!-- end room-block-2 -->--%>
-<%--                                </div><!-- end columns -->--%>
-<%--                            </div><!-- end item -->--%>
-
-<%--                            <div class="item">--%>
-<%--                                <div class="col-md-12">--%>
-<%--                                    <div class="room-block-2">--%>
-<%--                                        <div class="room-block-2-img">--%>
-<%--                                            <img src="public/images/room-2-3.jpg" alt="dest-img" class="img-fluid" />--%>
-
-<%--                                            <div class="room-block-2-btn">--%>
-<%--                                                <a href="#" class="btn"><span><i class="fa fa-angle-right"></i></span></a>--%>
-<%--                                            </div><!-- end room-block-2-btn-->--%>
-
-<%--                                            <div class="room-block-2-title">--%>
-<%--                                                <h3><a href="#">Deluxe Room</a></h3>--%>
-<%--                                                <ul class="list-unstyled">--%>
-<%--                                                    <li><h4><span>$64</span> / Night</h4></li>--%>
-<%--                                                    <li class="rating">--%>
-<%--                                                        <span><i class="fa fa-star"></i></span>--%>
-<%--                                                        <span><i class="fa fa-star"></i></span>--%>
-<%--                                                        <span><i class="fa fa-star"></i></span>--%>
-<%--                                                        <span><i class="fa fa-star"></i></span>--%>
-<%--                                                        <span><i class="fa fa-star-o"></i></span>--%>
-<%--                                                    </li>--%>
-<%--                                                </ul>--%>
-<%--                                            </div><!-- end room-block-2-title -->--%>
-<%--                                        </div><!-- end room-block-2-img -->--%>
-<%--                                    </div><!-- end room-block-2 -->--%>
-<%--                                </div><!-- end columns -->--%>
-<%--                            </div><!-- end item -->--%>
-
-<%--                            <div class="item">--%>
-<%--                                <div class="col-md-12">--%>
-<%--                                    <div class="room-block-2">--%>
-<%--                                        <div class="room-block-2-img">--%>
-<%--                                            <img src="public/images/room-2-4.jpg" alt="dest-img" class="img-fluid" />--%>
-
-<%--                                            <div class="room-block-2-btn">--%>
-<%--                                                <a href="#" class="btn"><span><i class="fa fa-angle-right"></i></span></a>--%>
-<%--                                            </div><!-- end room-block-2-btn-->--%>
-
-<%--                                            <div class="room-block-2-title">--%>
-<%--                                                <h3><a href="#">Deluxe Room</a></h3>--%>
-<%--                                                <ul class="list-unstyled">--%>
-<%--                                                    <li><h4><span>$64</span> / Night</h4></li>--%>
-<%--                                                    <li class="rating">--%>
-<%--                                                        <span><i class="fa fa-star"></i></span>--%>
-<%--                                                        <span><i class="fa fa-star"></i></span>--%>
-<%--                                                        <span><i class="fa fa-star"></i></span>--%>
-<%--                                                        <span><i class="fa fa-star"></i></span>--%>
-<%--                                                        <span><i class="fa fa-star-o"></i></span>--%>
-<%--                                                    </li>--%>
-<%--                                                </ul>--%>
-<%--                                            </div><!-- end room-block-2-title -->--%>
-<%--                                        </div><!-- end room-block-2-img -->--%>
-<%--                                    </div><!-- end room-block-2 -->--%>
-<%--                                </div><!-- end columns -->--%>
-<%--                            </div><!-- end item -->--%>
                         </div><!-- end owl-rooms-2 -->
 
                     </div><!-- end row -->
                 </div><!-- end columns -->
+                
             </div><!-- end row -->
         </div><!-- end container -->
     </section><!-- end rooms-2 -->
@@ -570,9 +393,9 @@
 
                             <div class="gallery-product col-12 col-md-6 col-lg-4 col-xl-4 no-padding">
                                 <div class="gallery-block">
-                                    <a href="public/images/gallery-2.jpg" title="image-2" class="with-caption gallery image-link">
+                                    <a href="../../../hilton/public/images/gallery-2.jpg" title="image-2" class="with-caption gallery image-link">
                                         <div class="gallery-img">
-                                            <img class="img-fluid" src="public/images/gallery-2.jpg" alt="image-2">
+                                            <img class="img-fluid" src="../../../hilton/public/images/gallery-2.jpg" alt="image-2">
 
                                             <div class="gallery-mask">
                                                 <div class="gallery-title">
@@ -587,9 +410,9 @@
 
                             <div class="gallery-product col-12 col-md-6 col-lg-4 col-xl-4 no-padding">
                                 <div class="gallery-block">
-                                    <a href="public/images/gallery-3.jpg" title="image-3" class="with-caption gallery image-link">
+                                    <a href="../../../hilton/public/images/gallery-3.jpg" title="image-3" class="with-caption gallery image-link">
                                         <div class="gallery-img">
-                                            <img class="img-fluid" src="public/images/gallery-3.jpg" alt="image-3">
+                                            <img class="img-fluid" src="../../../hilton/public/images/gallery-3.jpg" alt="image-3">
 
                                             <div class="gallery-mask">
                                                 <div class="gallery-title">
@@ -604,9 +427,9 @@
 
                             <div class="gallery-product col-12 col-md-6 col-lg-4 col-xl-4 no-padding">
                                 <div class="gallery-block">
-                                    <a href="public/images/gallery-4.jpg" title="image-4" class="with-caption gallery image-link">
+                                    <a href="../../../hilton/public/images/gallery-4.jpg" title="image-4" class="with-caption gallery image-link">
                                         <div class="gallery-img">
-                                            <img class="img-fluid" src="public/images/gallery-4.jpg" alt="image-4">
+                                            <img class="img-fluid" src="../../../hilton/public/images/gallery-4.jpg" alt="image-4">
 
                                             <div class="gallery-mask">
                                                 <div class="gallery-title">
@@ -621,9 +444,9 @@
 
                             <div class="gallery-product col-12 col-md-6 col-lg-4 col-xl-4 no-padding">
                                 <div class="gallery-block">
-                                    <a href="public/images/gallery-7.jpg" title="image-7" class="with-caption gallery image-link">
+                                    <a href="../../../hilton/public/images/gallery-7.jpg" title="image-7" class="with-caption gallery image-link">
                                         <div class="gallery-img">
-                                            <img class="img-fluid" src="public/images/gallery-7.jpg" alt="image-7">
+                                            <img class="img-fluid" src="../../../hilton/public/images/gallery-7.jpg" alt="image-7">
 
                                             <div class="gallery-mask">
                                                 <div class="gallery-title">
@@ -638,9 +461,9 @@
 
                             <div class="gallery-product col-12 col-md-6 col-lg-4 col-xl-4 no-padding">
                                 <div class="gallery-block">
-                                    <a href="public/images/gallery-8.jpg" title="image-8" class="with-caption gallery image-link">
+                                    <a href="../../../hilton/public/images/gallery-8.jpg" title="image-8" class="with-caption gallery image-link">
                                         <div class="gallery-img">
-                                            <img class="img-fluid" src="public/images/gallery-8.jpg" alt="image-8">
+                                            <img class="img-fluid" src="../../../hilton/public/images/gallery-8.jpg" alt="image-8">
 
                                             <div class="gallery-mask">
                                                 <div class="gallery-title">
@@ -655,9 +478,9 @@
 
                             <div class="gallery-product col-12 col-md-6 col-lg-4 col-xl-4 no-padding">
                                 <div class="gallery-block">
-                                    <a href="public/images/gallery-9.jpg" title="image-9" class="with-caption gallery image-link">
+                                    <a href="../../../hilton/public/images/gallery-9.jpg" title="image-9" class="with-caption gallery image-link">
                                         <div class="gallery-img">
-                                            <img class="img-fluid" src="public/images/gallery-9.jpg" alt="image-9">
+                                            <img class="img-fluid" src="../../../hilton/public/images/gallery-9.jpg" alt="image-9">
 
                                             <div class="gallery-mask">
                                                 <div class="gallery-title">
@@ -766,104 +589,24 @@
     </section><!-- end pricing-2 -->
 
 
-    <!--============ NEWSLETTER-2 =============-->
-    <section id="newsletter-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-5 col-xl-5">
-                    <h2>Subscribe Our Newsletter</h2>
-                </div><!-- end columns -->
-
-                <div class="col-12 col-md-12 col-lg-7 col-xl-7">
-                    <form>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input type="email" class="form-control input-lg" placeholder="Enter your email address" required/>
-                                <span class="input-group-btn"><button class="btn btn-lg"><i class="fa fa-envelope"></i></button></span>
-                            </div>
-                        </div>
-                    </form>
-                </div><!-- end columns -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section><!-- end newsletter-2 -->
-
-
     <!--========== FOOTER ==========-->
-    <section>
-        <div id="footer-top" class="banner-padding ftr-top-style-3 txt-white">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-12 col-md-12 col-lg-4 col-xl-5"  id="more-about">
-                        <h2 class="footer-heading big-768"><span>STAR</span>HOTEL</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
-                        <ul class="social-links list-inline list-unstyled">
-                            <li class="list-inline-item"><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
-                            <li class="list-inline-item"><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
-                            <li class="list-inline-item"><a href="#"><span><i class="fa fa-google-plus"></i></span></a></li>
-                            <li class="list-inline-item"><a href="#"><span><i class="fa fa-pinterest-p"></i></span></a></li>
-                            <li class="list-inline-item"><a href="#"><span><i class="fa fa-instagram"></i></span></a></li>
-                            <li class="list-inline-item"><a href="#"><span><i class="fa fa-youtube-play"></i></span></a></li>
-                        </ul>
-                    </div><!-- end columns -->
-
-                    <div class="col-12 col-md-6 col-lg-5 col-xl-4" id="f-instagram">
-                        <h4 class="footer-heading">Instagram Post</h4>
-                        <ul class="list-unstyled list-inline">
-                            <li class="list-inline-item"><a href="#"><img src="public/images/insta-1.jpg" class="img-fluid" alt="insta-img" /></a></li>
-                            <li class="list-inline-item"><a href="#"><img src="public/images/insta-2.jpg" class="img-fluid" alt="insta-img" /></a></li>
-                            <li class="list-inline-item"><a href="#"><img src="public/images/insta-3.jpg" class="img-fluid" alt="insta-img" /></a></li>
-                            <li class="list-inline-item"><a href="#"><img src="public/images/insta-4.jpg" class="img-fluid" alt="insta-img" /></a></li>
-                            <li class="list-inline-item"><a href="#"><img src="public/images/insta-5.jpg" class="img-fluid" alt="insta-img" /></a></li>
-                            <li class="list-inline-item"><a href="#"><img src="public/images/insta-6.jpg" class="img-fluid" alt="insta-img" /></a></li>
-                        </ul>
-                    </div><!-- end columns -->
-
-                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 text-left" id="contact-us">
-                        <h4 class="footer-heading">Contact Us</h4>
-                        <ul class="list-unstyled">
-                            <li class="list-inline-item"><span><i class="fa fa-map-marker"></i></span>29 Land St, Lorem City, CA</li>
-                            <li class="list-inline-item"><span><i class="fa fa-phone"></i></span>+00 123 4567</li>
-                            <li class="list-inline-item"><span><i class="fa fa-envelope"></i></span>info@starhotel.com</li>
-                        </ul>
-                    </div><!-- end columns -->
-
-                    <div class="col-12 col-md-12 col-lg-12 col-xl-12">
-                        <div id="footer-bottom">
-                            <div class="row">
-                                <div class="col-12 col-md-6 col-lg-6 col-xl-6" id="copyright">
-                                    <p>© 2017 <a href="#">StarHotel</a>. All rights reserved.</p>
-                                </div><!-- end columns -->
-
-                                <div class="col-12 col-md-6 col-lg-6 col-xl-6" id="terms">
-                                    <ul class="list-unstyled list-inline">
-                                        <li class="list-inline-item"><a href="#">Terms & Condition</a></li>
-                                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-                                    </ul>
-                                </div><!-- end columns -->
-                            </div><!-- end row -->
-                        </div><!-- end footer-bottom -->
-                    </div><!-- end columns -->
-                </div><!-- end row -->
-            </div><!-- end container -->
-        </div><!-- end footer-top -->
-    </section>
+    <jsp:include page="../partials/menu/footer.jsp" />
+    <!--Footer Section Ends-->
 </div>
 
 
 <!-- Page Scripts Starts -->
-<script src="public/js/jquery-3.3.1.min.js"></script>
-<script src="public/js/jquery.magnific-popup.min.js"></script>
-<script src="public/js/bootstrap.min4.3.1.js"></script>
-<script src="public/js/jquery.flexslider.js"></script>
+<script src="../../../hilton/public/js/jquery-3.3.1.min.js"></script>
+<script src="../../../hilton/public/js/jquery.magnific-popup.min.js"></script>
+<script src="../../../hilton/public/js/bootstrap.min4.3.1.js"></script>
+<script src="../../../hilton/public/js/jquery.flexslider.js"></script>
 
-<script src="public/js/owl.carousel.min.js"></script>
-<script src="public/js/custom-gallery.js"></script>
-<script src="public/js/custom-navigation.js"></script>
-<script src="public/vendors/gijgo-combined-1.9.13/js/gijgo.min.js"></script>
-<script src="public/js/custom-flex.js"></script>
-<script src="public/js/custom-owl.js"></script>
+<script src="../../../hilton/public/js/owl.carousel.min.js"></script>
+<script src="../../../hilton/public/js/custom-gallery.js"></script>
+<script src="../../../hilton/public/js/custom-navigation.js"></script>
+<script src="../../../hilton/public/vendors/gijgo-combined-1.9.13/js/gijgo.min.js"></script>
+<script src="../../../hilton/public/js/custom-flex.js"></script>
+<script src="../../../hilton/public/js/custom-owl.js"></script>
 <!-- Page Scripts Ends -->
 
 <script>
