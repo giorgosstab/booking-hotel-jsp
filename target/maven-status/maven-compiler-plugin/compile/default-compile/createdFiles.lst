@@ -1,5 +1,8 @@
 classes\Room.class
+classes\User.class
+servlets\auth\SignUpServlet.class
 servlets\RoomsServlet.class
 servlets\HomeServlet.class
 servlets\RoomDetailsServlet.class
 model\RoomDAO.class
+model\UserDAO.class
