@@ -19,8 +19,8 @@
                     <li class="list-inline-item"><a href="/hilton">Αρχικη</a></li>
                     <li class="list-inline-item"><a href="/hilton/rooms">Δωματια</a></li>
                     <li class="list-inline-item"><a href="/hilton/contact">Επικοινωνια</a></li>
-                    <li class="list-inline-item"><a href="/hilton/signup">Εγγραφη</a></li>
-                    <li class="list-inline-item"><a href="/hilton/signin">Συνδεση</a></li>
+                    <li class="list-inline-item"><a href="/hilton/auth?action=signup">Εγγραφη</a></li>
+                    <li class="list-inline-item"><a href="/hilton/auth?action=signin">Συνδεση</a></li>
                 </ul>
             </div><!-- end more-about -->
         </div><!-- end container -->

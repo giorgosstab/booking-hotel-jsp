@@ -17,7 +17,7 @@
                 <li style="display: none;" class="nav-item"><a class="nav-link"></a></li>
             </ul>
             <ul class="navbar-nav ml-lg-auto float-right">
-                <li class="nav-item"><a class="nav-link" href="/hilton/signup">Εγγραφειτε</a></li>
+                <li class="nav-item"><a class="nav-link" href="/hilton/auth?action=signup">Εγγραφειτε</a></li>
             </ul>
         </div><!-- end navbar collapse -->
     </div><!-- end container -->
