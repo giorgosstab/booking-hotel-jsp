@@ -1,6 +1,6 @@
 classes\Room.class
 classes\User.class
-servlets\auth\SignUpServlet.class
+servlets\auth\AuthServlet.class
 servlets\RoomsServlet.class
 servlets\HomeServlet.class
 servlets\RoomDetailsServlet.class
