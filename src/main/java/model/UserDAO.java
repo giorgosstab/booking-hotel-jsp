@@ -2,7 +2,6 @@ package model;
 
 import classes.User;
 
-import javax.servlet.http.HttpSession;
 import java.sql.*;
 
 public class UserDAO {
@@ -51,8 +50,8 @@ public class UserDAO {
         disconnect();
         return rowInserted;
     }
-    public boolean signinUser(User user) throws SQLException {
-        String sql = "SELECT email FROM user WHERE email = ? AND password = ?";
+    public User signinUser(User user) throws SQLException {
+        String sql = "SELECT * FROM user WHERE email = ? AND password = ?";
 
         connect();
 
@@ -62,11 +61,18 @@ public class UserDAO {
 
         ResultSet rs = st.executeQuery();
 
-        boolean logged = rs.next();
+        User loggedUser = null;
+        if (rs.next()) {
+            loggedUser = new User();
+            loggedUser.setId(rs.getInt("user_id"));
+            loggedUser.setFirstName(rs.getString("firstname"));
+            loggedUser.setLastName(rs.getString("lastname"));
+            loggedUser.setEmail(rs.getString("email"));
+        }
 
         rs.close();
         st.close();
 
-        return logged;
+        return loggedUser;
     }
 }

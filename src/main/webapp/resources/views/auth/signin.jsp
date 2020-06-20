@@ -30,6 +30,7 @@
 <div class="loader"></div>
 
 <jsp:include page="../partials/menu/top-bar.jsp" />
+<jsp:include page="../partials/menu/navbar.jsp" />
 
 <!--================== INNERPAGE-WRAPPER ================-->
 <section id="custom-form-wrapper" class="innerpage-wrapper">
@@ -60,6 +61,15 @@
                                 <div class="form-group">
                                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
                                         <c:out value="${sessionScope.message}"/>
+                                    </div>
+                                </div>
+                                <%session.invalidate();%>
+                            </c:if>
+
+                            <c:if test="${sessionScope.success != null}">
+                                <div class="form-group">
+                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                        <c:out value="${sessionScope.success}"/>
                                     </div>
                                 </div>
                                 <%session.invalidate();%>

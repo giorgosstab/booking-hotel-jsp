@@ -42,6 +42,9 @@ public class AuthServlet extends HttpServlet {
 				case "signin":
 					signInPage(request,response);
 					break;
+				case "signout":
+					signOut(request,response);
+					break;
 				case "create":
 					signUpUser(request,response);
 					break;
@@ -55,15 +58,26 @@ public class AuthServlet extends HttpServlet {
 	}
 
 	private void signUpPage(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException, ServletException{
-		RequestDispatcher dispatcher = request.getRequestDispatcher("resources/views/auth/signup.jsp");
-		dispatcher.forward(request, response);
+		HttpSession session = request.getSession(true);
+
+		if(session.getAttribute("logged_user") != null) {
+			response.sendRedirect("/hilton");
+		} else {
+			RequestDispatcher dispatcher = request.getRequestDispatcher("resources/views/auth/signup.jsp");
+			dispatcher.forward(request, response);
+		}
 	}
 
 	private void signInPage(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException, ServletException{
 		HttpSession session = request.getSession(true);
 		session.removeAttribute("confirm_password");
-		RequestDispatcher dispatcher = request.getRequestDispatcher("resources/views/auth/signin.jsp");
-		dispatcher.forward(request, response);
+
+		if(session.getAttribute("logged_user") != null) {
+			response.sendRedirect("/hilton");
+		} else {
+			RequestDispatcher dispatcher = request.getRequestDispatcher("resources/views/auth/signin.jsp");
+			dispatcher.forward(request, response);
+		}
 	}
 
 	private void signUpUser(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException {
@@ -77,12 +91,12 @@ public class AuthServlet extends HttpServlet {
 		Date created_at = new java.sql.Date(now.getTime());
 		Date updated_at = new java.sql.Date(now.getTime());
 
+		HttpSession session = request.getSession(true);
 		if(password.equals(confirm_password)) {
 			User newUser = new User(firstname,lastname,email,password,created_at,updated_at);
 			userDAO.signupUser(newUser);
 			response.sendRedirect("/hilton");
 		} else {
-			HttpSession session = request.getSession(true);
 			session.setAttribute("confirm_password", "Ο κωδικός με την επιβεβαίωση κωδικού πρέπει να ταιριάζουν!");
 			response.sendRedirect("/hilton/auth?action=signup");
 		}
@@ -94,14 +108,26 @@ public class AuthServlet extends HttpServlet {
 		String password = request.getParameter("password");
 
 		User checkUser = new User(email,password);
-		if(userDAO.signinUser(checkUser)) {
-			HttpSession session = request.getSession(true);
-			session.setAttribute("logged_user", email);
+		HttpSession session = request.getSession(true);
+		User loggerUser = userDAO.signinUser(checkUser);
+		if(loggerUser != null) {
+			session.setAttribute("logged_user", loggerUser);
 			response.sendRedirect("/hilton");
 		} else {
-			HttpSession session = request.getSession(true);
 			session.setAttribute("message", "Το email ή ο κωδικός πρόσβασης είναι λάθος!");
 			response.sendRedirect("/hilton/auth?action=signin");
+		}
+	}
+
+	private void signOut(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException {
+		HttpSession session = request.getSession(true);
+
+		if(session.getAttribute("logged_user") != null) {
+			session.removeAttribute("logged_user");
+			session.setAttribute("success", "Η αποσύνδεση έγινε με επιτυχία! Παρακαλώ συνδεθείτε.");
+			response.sendRedirect("/hilton/auth?action=signin");
+		} else {
+			response.sendRedirect("/hilton");
 		}
 	}
 }

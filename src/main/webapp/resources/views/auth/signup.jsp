@@ -29,8 +29,8 @@
 <!--====== LOADER =====-->
 <div class="loader"></div>
 
-
 <jsp:include page="../partials/menu/top-bar.jsp" />
+<jsp:include page="../partials/menu/navbar.jsp" />
 
 <!--================== INNERPAGE-WRAPPER ================-->
 <section id="custom-form-wrapper" class="innerpage-wrapper">
