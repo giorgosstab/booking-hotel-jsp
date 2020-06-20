@@ -2,7 +2,8 @@ C:\Users\giorgosstab\IdeaProjects\gr.hotel\src\main\java\classes\Room.java
 C:\Users\giorgosstab\IdeaProjects\gr.hotel\src\main\java\servlets\HomeServlet.java
 C:\Users\giorgosstab\IdeaProjects\gr.hotel\src\main\java\model\RoomDAO.java
 C:\Users\giorgosstab\IdeaProjects\gr.hotel\src\main\java\model\UserDAO.java
-C:\Users\giorgosstab\IdeaProjects\gr.hotel\src\main\java\servlets\auth\SignUpServlet.java
 C:\Users\giorgosstab\IdeaProjects\gr.hotel\src\main\java\servlets\RoomDetailsServlet.java
 C:\Users\giorgosstab\IdeaProjects\gr.hotel\src\main\java\servlets\RoomsServlet.java
+C:\Users\giorgosstab\IdeaProjects\gr.hotel\src\main\java\servlets\auth\AuthServlet.java
 C:\Users\giorgosstab\IdeaProjects\gr.hotel\src\main\java\classes\User.java
+C:\Users\giorgosstab\IdeaProjects\gr.hotel\src\main\java\servlets\ContactServlet.java

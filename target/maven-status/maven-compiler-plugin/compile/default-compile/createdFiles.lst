@@ -1,6 +1,10 @@
 classes\Room.class
+utilities\EmailUtility.class
+servlets\SendEmailServlet.class
 classes\User.class
+servlets\ContactServlet.class
 servlets\auth\AuthServlet.class
+utilities\EmailUtility$1.class
 servlets\RoomsServlet.class
 servlets\HomeServlet.class
 servlets\RoomDetailsServlet.class
