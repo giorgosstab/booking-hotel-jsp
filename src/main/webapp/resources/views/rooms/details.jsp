@@ -150,11 +150,8 @@
                                 <div class="innerpage-heading">
                                     <h1><c:out value='${room.name}' /></h1>
                                 </div><!-- end innerpage-heading -->
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Ut the enim ad minim veniam, quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea com modo conse quat. Duis aute irure dolor in reprehend erit in volupt ate velit esse cillum dolore eu fugiat nulla pari atur. Except eur sint occa ecat cupi datat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium the doloremque lauda ntium, totam rem aper iam, eaque ipsa quae</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam placerat tortor at suscipit. Nunc iaculis libero a quam consequat molestie. Cras volutpat ornare lectus, ut pulvinar neque pretium eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam placerat tortor at suscipit. Nunc iaculis libero a quam consequat molestie.</p>
-                                <p>Cras volutpat ornare lectus, ut pulvinar neque pretium eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam placerat tortor at suscipit. Nunc iaculis libero a quam consequat molestie.</p>
-                                <a href="reservation-right-sidebar.html" class="btn btn-yellow btn-lg btn-block">Κρατηση τωρα</a>
+                                <c:out value='${room.description}' escapeXml="false" />
+                                <a href="/hilton/booking?room_id=<c:out value='${room.id}' />" class="btn btn-yellow btn-lg btn-block">Κρατηση τωρα</a>
                             </div><!-- end description -->
 
                         </div><!-- end room-description -->

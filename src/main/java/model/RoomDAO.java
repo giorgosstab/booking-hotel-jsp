@@ -59,11 +59,13 @@ public class RoomDAO {
             int id = rs.getInt("room_id");
             String name = rs.getString("name");
             float price = rs.getFloat("price");
+            String excerpt = rs.getString("excerpt");
+            String description = rs.getString("description");
             String image = rs.getString("image");
             String created_at = rs.getString("created_at");
             String updated_at = rs.getString("updated_at");
 
-            Room room = new Room(id, name, price, image, created_at, updated_at);
+            Room room = new Room(id, name, price, excerpt, description, image, created_at, updated_at);
             listRoom.add(room);
         }
 
@@ -90,10 +92,12 @@ public class RoomDAO {
             String name = rs.getString("name");
             float price = rs.getFloat("price");
             String image = rs.getString("image");
+            String excerpt = rs.getString("excerpt");
+            String description = rs.getString("description");
             String created_at = rs.getString("created_at");
             String updated_at = rs.getString("updated_at");
 
-			room = new Room(room_id, name, price, image, created_at, updated_at);
+			room = new Room(room_id, name, price, excerpt, description, image, created_at, updated_at);
 		}
 
         rs.close();
@@ -117,11 +121,13 @@ public class RoomDAO {
             int id = rs.getInt("room_id");
             String name = rs.getString("name");
             float price = rs.getFloat("price");
+            String excerpt = rs.getString("excerpt");
+            String description = rs.getString("description");
             String image = rs.getString("image");
             String created_at = rs.getString("created_at");
             String updated_at = rs.getString("updated_at");
 
-            Room room = new Room(id, name, price, image, created_at, updated_at);
+            Room room = new Room(id, name, price, excerpt, description, image, created_at, updated_at);
             similarRooms.add(room);
         }
 
