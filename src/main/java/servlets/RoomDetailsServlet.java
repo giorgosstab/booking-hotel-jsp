@@ -47,12 +47,15 @@ public class RoomDetailsServlet extends HttpServlet {
     private void showRoom(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         Room room = roomDAO.getRoom(id);
-		List<Room> similarRooms = roomDAO.getSimilarRooms(id);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("resources/views/rooms/details.jsp");
-        request.setAttribute("room", room);
-		request.setAttribute("similarRooms", similarRooms);
-        dispatcher.forward(request, response);
-
+        if(room != null) {
+			List<Room> similarRooms = roomDAO.getSimilarRooms(id);
+			RequestDispatcher dispatcher = request.getRequestDispatcher("resources/views/rooms/details.jsp");
+			request.setAttribute("room", room);
+			request.setAttribute("similarRooms", similarRooms);
+			dispatcher.forward(request, response);
+		} else {
+			response.sendRedirect("/hilton/rooms");
+		}
     }
 
 	private void errorPage(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException, ServletException {
