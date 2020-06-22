@@ -4,7 +4,7 @@
 <nav class="navbar navbar-expand-xl navbar-custom sticky-top header-2" id="main_navbar">
     <div class="container">
 
-        <a href="#" class="navbar-brand"><span>STAR</span>HOTEL</a>
+        <a href="#" class="navbar-brand"><img src="../../../hilton/public/images/logo-small.png" height="" alt=""></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
             <i class="fa fa-bars"></i>
         </button>
