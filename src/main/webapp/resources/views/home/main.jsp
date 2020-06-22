@@ -83,92 +83,14 @@
     </section><!-- end flexslider-container -->
 
 
-    <!--=========== SEARCH-FORM ===========-->
-    <section class="search-form search-style">
-        <div class="container">
-            <form>
-                <div class="row">
-
-                    <div class="col-12 col-md-12 col-lg-6 col-xl-5">
-                        <div class="row">
-
-                            <div class="col-12 col-md-6">
-                                <div class="form-group left-icon">
-                                    <input type="text" class="form-control dpd1"placeholder="Check In" id="datepicker1" required/>
-                                    <i class="fa fa-calendar"></i>
-                                </div>
-                            </div><!-- end columns -->
-
-                            <div class="col-12 col-md-6">
-                                <div class="form-group left-icon">
-                                    <input type="text" class="form-control dpd2" placeholder="Check Out"  id="datepicker2" required/>
-                                    <i class="fa fa-calendar"></i>
-                                </div>
-                            </div><!-- end columns -->
-
-                        </div><!-- end row -->
-                    </div><!-- end columns -->
-
-                    <div class="col-12 col-md-12 col-lg-6 col-xl-5">
-                        <div class="row">
-
-                            <div class="col-12 col-md-12 col-lg-4">
-                                <div class="form-group right-icon">
-                                    <select class="form-control">
-                                        <option selected>Rooms</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                    <i class="fa fa-angle-down"></i>
-                                </div>
-                            </div><!-- end columns -->
-
-                            <div class="col-6 col-md-6 col-lg-4">
-                                <div class="form-group right-icon">
-                                    <select class="form-control">
-                                        <option selected>Adults</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                    <i class="fa fa-angle-down"></i>
-                                </div>
-                            </div><!-- end columns -->
-
-                            <div class="col-6 col-md-6 col-lg-4">
-                                <div class="form-group right-icon">
-                                    <select class="form-control">
-                                        <option selected>Adults</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                    <i class="fa fa-angle-down"></i>
-                                </div>
-                            </div><!-- end columns -->
-
-                        </div><!-- end row -->
-                    </div><!-- end columns -->
-
-                    <div class="col-12 col-md-12 col-lg-12 col-xl-2 search-btn">
-                        <button class="btn btn-yellow">Search</button>
-                    </div><!-- end columns -->
-
-                </div><!-- end row -->
-            </form>
-        </div><!-- end container -->
-    </section><!-- end search-form-->
-
-
     <!--================ ABOUT-3 ==============-->
     <section id="about-3" class="section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-heading-3">
-                        <h4>About Us</h4>
-                        <h2>Who We Are</h2>
+                        <h4>Σχετικα με εμας</h4>
+                        <h2>Ποιοι ειμαστε</h2>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
                         <hr class="page-heading-3-line" />
                     </div><!-- end page-heading-3 -->
@@ -178,7 +100,7 @@
                         <div class="col-12 col-md-4 col-lg-4 col-xl-4">
                             <div class="about-3-block">
                                 <span><i class="fa fa-coffee"></i></span>
-                                <h3>Restaurant</h3>
+                                <h3>Εστιατόριο</h3>
                                 <p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
                             </div><!-- end about-3-block -->
                         </div><!-- end columns -->
@@ -186,7 +108,7 @@
                         <div class="col-12 col-md-4 col-lg-4 col-xl-4">
                             <div class="about-3-block">
                                 <span><i class="fa fa-leaf"></i></span>
-                                <h3>SPA</h3>
+                                <h3>Ιαματική πηγή</h3>
                                 <p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
                             </div><!-- end about-3-block -->
                         </div><!-- end columns -->
@@ -194,7 +116,7 @@
                         <div class="col-12 col-md-4 col-lg-4 col-xl-4">
                             <div class="about-3-block">
                                 <span><i class="fa fa-wifi"></i></span>
-                                <h3>Free Wifi</h3>
+                                <h3>Δωρεάν ασύρματη σύνδεση στο διαδίκτυο</h3>
                                 <p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
                             </div><!-- end about-3-block -->
                         </div><!-- end columns -->
@@ -212,9 +134,9 @@
             <div class="row">
                 <div class="col-md-8 col-lg-7 col-xl-6 banner-6-content">
                     <div class="banner-6-text">
-                        <h2><span>We Are</span> Extraordinary.</h2>
+                        <h2><span>Είμαστε</span> εξαιρετικοι.</h2>
                         <p>Kevin pastrami tri-tip prosciutto ham hock pork belly bacon pork loin salami pork chop shank corned beef tenderloin meatball cow. Pork bresaola meatloaf tongue, landjaeger tail andouille strip steak tenderloin sausage chicken tri-tip. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <a href="#" class="btn btn-default">Read More <span><i class="fa fa-angle-right"></i></span></a>
+                        <a href="javascript:void(0);" class="btn btn-default">Διαβαστε περισσοτερα <span><i class="fa fa-angle-right"></i></span></a>
                     </div><!-- end banner-6-text -->
                 </div><!-- end columns -->
             </div><!-- end row -->
@@ -228,8 +150,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-heading-3">
-                        <h4>Our Rooms</h4>
-                        <h2>Luxury Interior</h2>
+                        <h4>Τα δωματια μας</h4>
+                        <h2>Πολυτελές εσωτερικό</h2>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
                         <hr class="page-heading-3-line" />
                     </div><!-- end page-heading-3 -->
@@ -268,75 +190,6 @@
     </section><!-- end rooms-2 -->
 
 
-    <!--==================== OFFERS ==================-->
-    <section id="offers" class="section-padding bg-grey">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-12 col-xl-12">
-                    <div class="page-heading-3">
-                        <h4>Latest Offers</h4>
-                        <h2>Amazing Deals</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                        <hr class="page-heading-3-line" />
-                    </div><!-- end page-heading-3 -->
-
-                    <div class="row" id="offer-blocks">
-
-                        <div class="col-12 col-md-12 col-lg-6 col-xl-6">
-                            <a href="#">
-                                <div class="offer-block"  id="offer-1">
-                                    <div class="offer-mask">
-                                        <p class="tag">Enjoy with 25% OFF</p>
-                                        <div class="offer-info">
-                                            <h2>Dining Offer</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
-                                            <ul class="list-unstyled">
-                                                <li>- Flight Ticket</li>
-                                                <li>- Restaurant (Full Board)</li>
-                                                <li>- Music Concert</li>
-                                                <li>- Airport Pick-up</li>
-                                                <li>- Sport Activities</li>
-                                            </ul>
-                                        </div><!-- end offer-info -->
-                                    </div><!-- end offer-mask -->
-                                </div><!-- end offer-block -->
-                            </a>
-                        </div><!-- end columns -->
-
-                        <div class="col-12 col-md-12 col-lg-6 col-xl-6">
-                            <a href="#">
-                                <div class="offer-block" id="offer-2">
-                                    <div class="offer-img">
-                                        <div class="offer-mask">
-                                            <p class="tag">Enjoy with 25% OFF</p>
-                                            <div class="offer-info">
-                                                <h2>Weekend Spa Offer</h2>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
-                                                <ul class="list-unstyled">
-                                                    <li>- Flight Ticket</li>
-                                                    <li>- Restaurant (Full Board)</li>
-                                                    <li>- Music Concert</li>
-                                                    <li>- Airport Pick-up</li>
-                                                    <li>- Sport Activities</li>
-                                                </ul>
-                                            </div><!-- end offer-info -->
-                                        </div><!-- end offer-mask -->
-                                    </div><!-- end offer-img -->
-                                </div><!-- end offer-block -->
-                            </a>
-                        </div><!-- end columns -->
-
-                    </div><!-- end row -->
-
-                    <div class="butn text-center">
-                        <a href="offers.html" class="btn btn-lg btn-padding btn-g-border">View More Offers</a>
-                    </div><!-- end butn -->
-
-                </div><!-- end columns -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section><!-- end offers -->
-
 
     <!--======================== BANNER-2 =====================-->
     <section id="banner-2" class="banner-padding banner-2-colored">
@@ -346,28 +199,28 @@
                 <div class="col-12 col-md-6 col-lg-3 col-xl-3">
                     <div class="highlight-box">
                         <h2>112+</h2>
-                        <h4>New Friendships</h4>
+                        <h4>Νέες φιλίες</h4>
                     </div><!-- end highlight-box -->
                 </div><!-- end columns -->
 
                 <div class="col-12 col-md-6 col-lg-3 col-xl-3">
                     <div class="highlight-box">
                         <h2>254+</h2>
-                        <h4>Five Star Ratings</h4>
+                        <h4>Βαθμολογίες πέντε αστέρων</h4>
                     </div><!-- end highlight-box -->
                 </div><!-- end columns -->
 
                 <div class="col-12 col-md-6 col-lg-3 col-xl-3">
                     <div class="highlight-box">
                         <h2>430+</h2>
-                        <h4>International Guests</h4>
+                        <h4>Διεθνείς επισκέπτες</h4>
                     </div><!-- end highlight-box -->
                 </div><!-- end columns -->
 
                 <div class="col-12 col-md-6 col-lg-3 col-xl-3">
                     <div class="highlight-box">
                         <h2>745+</h2>
-                        <h4>Breakfast Served</h4>
+                        <h4>Σερβίρεται πρωινό</h4>
                     </div><!-- end highlight-box -->
                 </div><!-- end columns -->
 
@@ -382,9 +235,8 @@
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-12 col-xl-12">
                     <div class="page-heading-3">
-                        <h4>Our Photos</h4>
-                        <h2>Awesome Gallery</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <h4>Οι φωτογραφιες μας</h4>
+                        <h2>Φοβερή γκαλερί</h2>
                         <hr class="page-heading-3-line" />
                     </div><!-- end page-heading-3 -->
 
@@ -399,8 +251,8 @@
 
                                             <div class="gallery-mask">
                                                 <div class="gallery-title">
-                                                    <h2>SPA and Beauty</h2>
-                                                    <p>2 Pictures</p>
+                                                    <h2>SPA και ομορφιά</h2>
+                                                    <p>2 Εικόνες</p>
                                                 </div>  <!-- end gallery-title -->
                                             </div><!-- end gallery-mask -->
                                         </div><!-- end gallery-img -->
@@ -416,8 +268,8 @@
 
                                             <div class="gallery-mask">
                                                 <div class="gallery-title">
-                                                    <h2>SPA and Beauty</h2>
-                                                    <p>2 Pictures</p>
+                                                    <h2>SPA και ομορφιά</h2>
+                                                    <p>2 Εικόνες</p>
                                                 </div>  <!-- end gallery-title -->
                                             </div><!-- end gallery-mask -->
                                         </div><!-- end gallery-img -->
@@ -433,8 +285,8 @@
 
                                             <div class="gallery-mask">
                                                 <div class="gallery-title">
-                                                    <h2>SPA and Beauty</h2>
-                                                    <p>2 Pictures</p>
+                                                    <h2>SPA και ομορφιά</h2>
+                                                    <p>2 Εικόνες</p>
                                                 </div>  <!-- end gallery-title -->
                                             </div><!-- end gallery-mask -->
                                         </div><!-- end gallery-img -->
@@ -450,8 +302,8 @@
 
                                             <div class="gallery-mask">
                                                 <div class="gallery-title">
-                                                    <h2>SPA and Beauty</h2>
-                                                    <p>2 Pictures</p>
+                                                    <h2>SPA και ομορφιά</h2>
+                                                    <p>2 Εικόνες</p>
                                                 </div>  <!-- end gallery-title -->
                                             </div><!-- end gallery-mask -->
                                         </div><!-- end gallery-img -->
@@ -467,8 +319,8 @@
 
                                             <div class="gallery-mask">
                                                 <div class="gallery-title">
-                                                    <h2>SPA and Beauty</h2>
-                                                    <p>2 Pictures</p>
+                                                    <h2>SPA και ομορφιά</h2>
+                                                    <p>2 Εικόνες</p>
                                                 </div>  <!-- end gallery-title -->
                                             </div><!-- end gallery-mask -->
                                         </div><!-- end gallery-img -->
@@ -484,8 +336,8 @@
 
                                             <div class="gallery-mask">
                                                 <div class="gallery-title">
-                                                    <h2>SPA and Beauty</h2>
-                                                    <p>2 Pictures</p>
+                                                    <h2>SPA και ομορφιά</h2>
+                                                    <p>2 Εικόνες</p>
                                                 </div>  <!-- end gallery-title -->
                                             </div><!-- end gallery-mask -->
                                         </div><!-- end gallery-img -->
@@ -499,95 +351,6 @@
             </div><!-- end row -->
         </div><!-- end container -->
     </section><!-- end our-gallery -->
-
-
-    <!--================ PRICING-2 ==============-->
-    <section id="pricing-2" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-12 col-xl-12">
-                    <div class="page-heading-3">
-                        <h4>Our Pricing</h4>
-                        <h2>Best Packages</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                        <hr class="page-heading-3-line" />
-                    </div><!-- end page-heading-3 -->
-
-                    <div class="row">
-                        <div class="col-12 col-md-12 col-lg-12 offset-xl-1 col-xl-10 offset-xl-1">
-                            <div class="row">
-
-                                <div class="col-12 col-md-6 col-lg-4 col-xl-4 text-center no-pd-r">
-                                    <div class="price-table-2">
-                                        <div class="p-table-2-heading">
-                                            <h2 class="title-2">Luxury Room</h2>
-                                            <h2 class="price-2">$199<span>night</span></h2>
-                                        </div><!-- end p-table-2-heading -->
-
-                                        <div class="features-2">
-                                            <ul class="list-unstyled text-center">
-                                                <li>Breakfast</li>
-                                                <li>Private Balcony</li>
-                                                <li>Sea View</li>
-                                                <li>Free Wifi</li>
-                                                <li>Bathroom</li>
-                                                <li>Water Heated pool</li>
-                                            </ul>
-                                            <button class="btn">Select Package</button>
-                                        </div><!-- end features -->
-                                    </div><!-- end price-table-2 -->
-                                </div><!-- end columns -->
-
-                                <div class="col-12 col-md-6 col-lg-4 col-xl-4 text-center no-pd-r no-pd-l">
-                                    <div class="price-table-2 best-package">
-                                        <div class="p-table-2-heading">
-                                            <h2 class="title-2">Comfort Room</h2>
-                                            <h2 class="price-2">$199<span>night</span></h2>
-                                        </div><!-- end p-table-2-heading -->
-
-                                        <div class="features-2">
-                                            <ul class="list-unstyled text-center">
-                                                <li>Breakfast</li>
-                                                <li>Private Balcony</li>
-                                                <li>Sea View</li>
-                                                <li>Free Wifi</li>
-                                                <li>Bathroom</li>
-                                                <li>Water Heated pool</li>
-                                            </ul>
-                                            <button class="btn">Select Package</button>
-                                        </div><!-- end features -->
-                                    </div><!-- end price-table-2 -->
-                                </div><!-- end columns -->
-
-                                <div class="col-12 col-md-6 col-lg-4 col-xl-4 text-center no-pd-l">
-                                    <div class="price-table-2">
-                                        <div class="p-table-2-heading">
-                                            <h2 class="title-2">Deluxe Room</h2>
-                                            <h2 class="price-2">$199<span>night</span></h2>
-                                        </div><!-- end p-table-2-heading -->
-
-                                        <div class="features-2">
-                                            <ul class="list-unstyled text-center">
-                                                <li>Breakfast</li>
-                                                <li>Private Balcony</li>
-                                                <li>Sea View</li>
-                                                <li>Free Wifi</li>
-                                                <li>Bathroom</li>
-                                                <li>Water Heated pool</li>
-                                            </ul>
-                                            <button class="btn">Select Package</button>
-                                        </div><!-- end features -->
-                                    </div><!-- end price-table-2 -->
-                                </div><!-- end columns -->
-
-                            </div><!-- end row -->
-                        </div><!-- end columns -->
-                    </div><!-- end row -->
-                </div><!-- end columns -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section><!-- end pricing-2 -->
-
 
     <!--========== FOOTER ==========-->
     <jsp:include page="../partials/menu/footer.jsp" />
