@@ -47,9 +47,13 @@ public class BookingServlet extends HttpServlet {
 	private void showBookingForm(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException, ServletException {
 		int room_id = Integer.parseInt(request.getParameter("room_id"));
 		Room bookingRoom = roomDAO.getRoom(room_id);
-		request.setAttribute("bookingRoom", bookingRoom);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("resources/views/booking/main.jsp");
-		dispatcher.forward(request, response);
+		if(bookingRoom != null) {
+			request.setAttribute("bookingRoom", bookingRoom);
+			RequestDispatcher dispatcher = request.getRequestDispatcher("resources/views/booking/main.jsp");
+			dispatcher.forward(request, response);
+		} else {
+			response.sendRedirect("/hilton/rooms");
+		}
 	}
 
 	private void errorPage(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException, ServletException {
