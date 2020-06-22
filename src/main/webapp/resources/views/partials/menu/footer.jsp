@@ -4,7 +4,7 @@
     <div id="footer-top" class="banner-padding ftr-top-style-2">
         <div class="container">
             <div id="more-about">
-                <h2 class="footer-heading"><span>STAR</span>HOTEL</h2>
+                <h2 class="footer-heading"><span>HILTON</span> HOTEL</h2>
                 <p>Όλο το υλικό εδώ © 2020 Hilton Company Pte. Ltd. Με επιφύλαξη παντός δικαιώματος.
                     Το hilton είναι μέρος της Booking.com, της παγκόσμιας ηγετικής εταιρείας στο διαδικτυακό ταξίδι και σχετικές υπηρεσίες.</p>
 
