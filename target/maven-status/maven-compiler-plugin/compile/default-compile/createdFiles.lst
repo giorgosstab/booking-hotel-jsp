@@ -1,5 +1,6 @@
 classes\Room.class
 servlets\BookingServlet.class
+classes\Booking.class
 servlets\SendEmailServlet.class
 servlets\ContactServlet.class
 servlets\auth\AuthServlet.class
@@ -7,7 +8,9 @@ utilities\EmailUtility$1.class
 servlets\RoomsServlet.class
 servlets\HomeServlet.class
 servlets\RoomDetailsServlet.class
+servlets\ReservationServlet.class
 utilities\EmailUtility.class
 classes\User.class
+model\BookingDAO.class
 model\RoomDAO.class
 model\UserDAO.class
