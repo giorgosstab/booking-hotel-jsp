@@ -1,18 +1,17 @@
-<%@ page import="classes.Room" %>
-<%@ page import="java.util.ArrayList" %>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Reservation-Right-Sidebar</title>
+    <title>Hilton - Κράτηση</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="../../../hilton/public/images/favicon.png" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i%7CPlayfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
     <!-- Bootstrap Stylesheet -->
     <link rel="stylesheet" href="../../../hilton/public/css/bootstrap.min4.3.1.css">
@@ -26,7 +25,11 @@
     <link rel="stylesheet" href="../../../hilton/public/css/responsive.css">
 
     <!--Date-Picker Stylesheet-->
-    <link rel="stylesheet" href="../../../hilton/public/vendors/gijgo-combined-1.9.13/../../../hilton/public/css/gijgo.min.css">
+    <link rel="stylesheet" href="../../../hilton/public/vendors/gijgo-combined-1.9.13/css/gijgo.min.css">
+
+    <style>
+        .gj-icon { display: none; }
+    </style>
 </head>
 
 
@@ -71,7 +74,7 @@
                                 <h1>Κρατηση</h1>
                             </div><!-- end innerpage-heading -->
 
-                            <form>
+                            <form action="/hilton/reservation?room_id=<c:out value='${bookingRoom.id}' />" method="post">
                                 <div class="row">
 
                                     <div class="col-12 col-md-6 col-lg-6 col-xl-6">
@@ -97,21 +100,21 @@
 
                                     <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Τηλεφωνικο νουμερο" name="telephone" required/>
+                                            <input type="text" class="form-control" placeholder="Τηλεφωνικο νουμερο" name="phone" required/>
                                             <span><i class="fa fa-phone"></i></span>
                                         </div>
                                     </div><!-- end columns -->
 
                                     <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control dpd1" placeholder="Ημερομηνια αφιξης" name="arrival_date" required/>
+                                            <input type="text" class="form-control dpd1" placeholder="Ημερομηνια αφιξης" id="arrival" name="arrival_date" required/>
                                             <span><i class="fa fa-calendar"></i></span>
                                         </div>
                                     </div><!-- end columns -->
 
                                     <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control dpd2" placeholder="Ημερομηνια αναχωρησης" name="departure_date" required/>
+                                            <input type="text" class="form-control dpd2" placeholder="Ημερομηνια αναχωρησης" id="departure" name="departure_date" required/>
                                             <span><i class="fa fa-calendar"></i></span>
                                         </div>
                                     </div><!-- end columns -->
@@ -133,6 +136,7 @@
                                             <span><i class="fa fa-angle-down"></i></span>
                                             <select class="form-control" name="children" required>
                                                 <option value="" selected>Παιδια</option>
+                                                <option value="0">0</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -145,6 +149,7 @@
                                             <span><i class="fa fa-angle-down"></i></span>
                                             <select class="form-control" name="infants" required>
                                                 <option value="" selected>Βρεφη</option>
+                                                <option value="0">0</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -154,12 +159,12 @@
 
                                     <div class="col-12 col-md-12 col-lg-12 col-xl-12">
                                         <div class="form-group">
-                                            <textarea class="form-control" rows="5" placeholder="Εισαγαγετε επιπλεον μηνυμα" name="extra_message"></textarea>
+                                            <textarea class="form-control" rows="5" placeholder="Εισαγαγετε επιπλεον μηνυμα" name="message"></textarea>
                                         </div>
                                     </div><!-- end columns -->
 
                                     <div class="col-12 col-md-12 col-lg-12 col-xl-12">
-                                        <a href="#" class="btn btn-yellow">Κρατηση τωρα</a>
+                                        <button class="btn btn-yellow">Κρατηση τωρα</button>
                                     </div><!-- end columns -->
 
                                 </div><!-- end row -->
@@ -250,11 +255,17 @@
 
 <!-- Page Scripts Starts -->
 <script src="../../../hilton/public/js/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="../../../hilton/public/js/bootstrap.min4.3.1.js"></script>
 
 <script src="../../../hilton/public/js/custom-navigation.js"></script>
-<script src="../../../hilton/public/vendors/gijgo-combined-1.9.13/../../../hilton/public/js/gijgo.min.js"></script>
+<script src="../../../hilton/public/vendors/gijgo-combined-1.9.13/js/gijgo.min.js"></script>
 <!-- Page Scripts Ends -->
-
+<script>
+    $(document).ready(function(){
+        $( "#arrival" ).datepicker({ dateFormat: 'yy-mm-dd' });
+        $( "#departure" ).datepicker({ dateFormat: 'yy-mm-dd' });
+    });
+</script>
 </body>
 </html>
